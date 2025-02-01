@@ -1,0 +1,130 @@
+body{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 15px;
+    line-height: 2em;
+    color: orange;
+    font-weight: 400;
+    background: white;
+}
+.columns-block{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.left-col-block{
+    width: 50%;
+    text-align: center;
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+}
+.right-col-block{
+    width: 50%;
+    position: absolute;
+    right: 0;
+}
+@media(max-width:600px){
+    .left-col-block{
+        width: 100%;
+        position: relative;
+    }
+    .right-col-block{
+        width: 100%;
+        position: relative;
+    }
+}
+.header{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    vertical-align:middle;
+    position: relative;
+}
+.header .profile-image{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: top;
+}
+.header .profile-image:before{
+    content: "";
+    position: absolute;
+    left:0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(-30deg,rgba(32, 68, 199, 0.5)0%, rgba(82, 135, 234, 0.2)40%,transparent 50%,transparent 100%);
+}
+.header .content{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10%;
+}
+.header .content h1{
+    font-size: 36px;
+    color:#F72C5B;
+    line-height: 1;
+    margin: 0;
+}
+.header .content p{
+    font-size: 30px;
+    color: #001A6E;
+}
+.header .content .social-icon{
+    margin: 0;
+    padding: 0;;
+    display: block;
+}
+.header .content .social-icon li{
+    display: inline-block;
+    margin: 0 1px;
+}
+.header .content .social-icon li a{
+    display: block;
+    font-size: 15px;
+    color: white;
+    height: 35px;
+    width: 35px;
+    line-height: 32px;
+    text-align: center;
+    border-radius: 100%;
+    border: 2px solid #555;
+}
+.header .content .social-icon li a:hover{
+    color: black;
+}
+.section-wrapper{
+    padding: 3%;
+}
+.section-title{
+    margin-bottom: 15px;
+}
+.section-title h2{
+    color: black;
+}
+.grey-bg{
+    background-color: #f9f9f9;
+}
+.expertise-item{
+    margin-bottom: 20px;
+}
+.expertise-item h3{
+    margin-bottom: 5px;
+}
+.education-details span{
+    font-weight:bold;
+}
+.project-details{
+    background-color: #f9f9f9;
+}
+.project-details span{
+    font-weight: bold;
+}
