@@ -11,6 +11,19 @@ body{
     flex-wrap: wrap;
     justify-content: space-around;
 }
+@media (max-width: 768px) {
+    .columns-block {
+        display: flex;
+        flex-direction: column; /* Stack sections */
+    }
+    .left-col-block, .right-col-block {
+        width: 100%; /* Take full width */
+    }
+    .content {
+        text-align: center; /* Center text */
+    }
+}
+
 .left-col-block{
     width: 50%;
     text-align: center;
@@ -50,6 +63,13 @@ body{
     background-size: cover;
     background-position: top;
 }
+.profile-image img {
+    width: 100%;
+    max-width: 100%; /* Adjust max size */
+    height: auto;
+    /* border-radius: 50%; */
+}
+
 .header .profile-image:before{
     content: "";
     position: absolute;
@@ -127,4 +147,20 @@ body{
 }
 .project-details span{
     font-weight: bold;
+}
+@media (max-width: 768px) {
+    .section-wrapper {
+        padding: 20px; /* Reduce padding */
+    }
+    .container-fluid {
+        padding: 10px;
+    }
+    .section-title h2 {
+        font-size: 22px; /* Adjust font size */
+    }
+}
+@media (max-width: 576px) {
+    .progress {
+        width: 100%;
+    }
 }
